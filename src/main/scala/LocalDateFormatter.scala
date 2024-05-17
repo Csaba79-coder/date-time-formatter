@@ -16,7 +16,7 @@ object LocalDateFormatter {
   }
 
   private def parseTextToLocalDate(text: Option[String]): Option[LocalDate] = {
-    // Define the DateTimeFormatter for the given date format
+    // Define the DateTimeFormat
     val customDateFormatter = DateTimeFormatter.ofPattern("dd-MMM-yy", Locale.ENGLISH)
 
     // Attempt to parse the date string into a LocalDate
